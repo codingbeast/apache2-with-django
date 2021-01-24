@@ -6,6 +6,12 @@ https://stackoverflow.com/questions/14927345/importerror-no-module-named-django-
 sudo apt-get remove libapache2-mod-python libapache2-mod-wsgi
 sudo apt-get install libapache2-mod-wsgi-py3
 
+agar fir bhi work na kre to 
+pip install mod_wsgi 
+after that 
+/etc/apache2/apach2.conf me jao and nicke likhe line ko top pr past kr do 
+apne virtualenv se path nikalkr
+LoadModule wsgi_module "/var/www/html/envp/lib/python3.6/site-packages/mod_wsgi/server/mod_wsgi-py36.cpython-36m-x86_64-linux-gnu.so"
 
 
 disble the default conf in  apache2 and create the new conf .
