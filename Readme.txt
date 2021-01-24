@@ -3,10 +3,15 @@ https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s
 
 https://stackoverflow.com/questions/14927345/importerror-no-module-named-django-core-wsgi-apache-virtualenv-aws-wsgi
 
+(run this command from home sometime from your system folder installation not work)
 sudo apt-get remove libapache2-mod-python libapache2-mod-wsgi
 sudo apt-get install libapache2-mod-wsgi-py3
 
 agar fir bhi work na kre to 
+envp activate krke ye run kre
+mod_wsgi-express module-config
+
+output ko /etc/apache2/apach2.conf me top pr likhe
 pip install mod_wsgi 
 after that 
 /etc/apache2/apach2.conf me jao and nicke likhe line ko top pr past kr do 
