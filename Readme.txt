@@ -20,3 +20,7 @@ cd /etc/apache2/sites-available/
 use /var/www/html/yourproject folder 
 
 becouse some time you can face permission issue if you use other folder.
+
+
+how to enbale config : sudo a2ensite virtual_host_file_name
+how to disble config : sudo a2dissite virtual_host_file_name
