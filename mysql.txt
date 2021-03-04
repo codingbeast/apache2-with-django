@@ -1,0 +1,23 @@
+pip install PyMySQL
+
+
+#============settings.py =======================
+import pymysql
+
+
+'ENGINE': 'django.db.backends.mysql',
+'OPTIONS': {
+ 'read_default_file': '/home/papayuae/test/my.cnf',
+ 'sql_mode': 'traditional',
+},
+
+pymysql.version_info = (1, 4, 2, "final", 0)
+pymysql.install_as_MySQLdb()
+
+#===============================================
+# my.cnf
+[client]
+database = NAME
+user = USER
+password = PASSWORD
+default-character-set = utf8
